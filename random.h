@@ -30,7 +30,7 @@ private:
     T a, b, c;
 };
 
-static std::mt19937 &random_generator() {
+static std::mt19937& random_generator() {
     static std::random_device rd;
     static std::mt19937 generator{rd()};
     return generator;
@@ -53,6 +53,6 @@ T uniform_random(T min, T max) {
 template<class T>
 T triangular_random(T min, T mode, T max) {
     static_assert(std::is_arithmetic<T>::value, "T must be arithmetic");
-    triangular_distribution <T> distribution{min, max, mode};
+    triangular_distribution<T> distribution{min, max, mode};
     return distribution(random_generator());
 }

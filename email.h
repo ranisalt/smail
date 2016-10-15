@@ -1,13 +1,13 @@
 #pragma once
 
-enum class EmailType {
+enum EmailType {
     LOCAL,
     REMOTE,
 };
 
 class Email {
 public:
-    Email(EmailType sender, EmailType receiver):
+    Email(EmailType sender, EmailType receiver) :
             sender{sender}, receiver{receiver} {}
 
     Email(const Email& email) = default;
