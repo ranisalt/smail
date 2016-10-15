@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cmath>
 #include <random>
 
 template<class T = double>
@@ -16,13 +17,13 @@ public:
 
     template<class Generator>
     T operator()(Generator& g) {
-        auto x = g();
-        if (x <= b) {
-            static T denominator = (b - a) * (c - a);
-            return 2 * (x - a) / denominator;
+        auto rand = static_cast<double>(g()) / g.max();
+        if (rand < static_cast<double>(c - a) / (b - a)) {
+            static T coef = (b - a) * (c - a);
+            return a + std::sqrt(rand * coef);
         }
-        static T denominator = (c - b) * (c - a);
-        return 2 * (c - x) / denominator;
+        static T coef = (b - a) * (b - c);
+        return b - std::sqrt((1 - rand) * coef);
     }
 
 private:
