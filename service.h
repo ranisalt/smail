@@ -1,33 +1,30 @@
 #pragma once
 
 #include <queue>
-#include <vector>
 
-#include "email.h"
-#include "random.h"
-
-class ReceptionServer {
+class ServiceServer {
     struct PendingEmail {
         PendingEmail(Email email);
 
         Email email;
-        double arrival;
-        double departure;
+        std::size_t arrival;
+        std::size_t departure;
     };
 
 public:
-    ReceptionServer() = default;
+    ServiceServer(std::size_t servers);
 
     void push(Email email);
 
-    void next(ServiceServer& sl, ServiceServer& sr);
+    Email pop();
 
     std::size_t size() const {
         return queue.size();
     }
 
 private:
-    double next_tick = 0.0;
+    std::size_t servers;
+    std::size_t occupied = 0;
     std::queue<PendingEmail> queue;
     std::vector<PendingEmail> history;
 };

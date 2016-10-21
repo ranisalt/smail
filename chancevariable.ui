@@ -1,0 +1,1394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChanceVariable</class>
+ <widget class="QDialog" name="ChanceVariable">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>461</width>
+    <height>574</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="Configurar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>421</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="currentIndex">
+    <number>4</number>
+   </property>
+   <widget class="QWidget" name="Trafego">
+    <attribute name="title">
+     <string>Tab 1</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>191</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Tráfego(%)</string>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Local/Local:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Local/Remoto:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remoto/Remoto:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remoto/Local:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="trafegoLL">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>30</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="trafegoLR">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>60</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="trafegoRL">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>120</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="trafegoRR">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>90</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Taxas">
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>341</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Taxas (%)</string>
+     </property>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Local/Local:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Local/Remoto:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remoto/Remoto:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remoto/Local:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="taxaRLS">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>140</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="taxaRRS">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>110</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="taxaLRS">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>80</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>30</y>
+        <width>59</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Sucesso</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>30</y>
+        <width>59</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fracasso</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>30</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Adiamento</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="taxaLLS">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>50</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="taxaRRF">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>110</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="taxaLRF">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>80</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="taxaLLF">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>50</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="taxaRLF">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>140</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="taxaLLA">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>50</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="taxaLRA">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>80</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="taxaRRA">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>110</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="taxaRLA">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>140</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Tab 2</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>331</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Centro de Serviço</string>
+     </property>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Centro 1 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Centro 2:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="centro1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>30</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="centro2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>60</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>331</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Tempo entre chegadas</string>
+     </property>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Local:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remoto:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tempoLocal">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>30</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tempoRemoto">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>60</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>381</width>
+       <height>341</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Tempo de Serviço (Seg.)</string>
+     </property>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>59</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tipo</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>59</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Recepção</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>30</y>
+        <width>59</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Serviço</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LLS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LLF</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LRA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LRF</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LRS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LLA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>270</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RLA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RLF</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RLS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RRA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RRF</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RRS</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_21">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_22">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_23">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>170</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_24">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>150</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_25">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>130</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_26">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>110</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_27">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>90</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_28">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>70</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_29">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>270</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_30">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>250</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_31">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>230</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_32">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>210</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_34">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>50</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_35">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>70</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_36">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>50</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_37">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>90</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_38">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>130</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_39">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>110</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_40">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>190</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_41">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>170</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_42">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>110</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_43">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>70</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_44">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>150</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_45">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>130</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_46">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>90</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_47">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>150</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_48">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>170</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_49">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>190</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_50">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>210</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_51">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>210</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_52">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>230</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_53">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>230</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_54">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>270</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_55">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>270</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_56">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>250</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_57">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>250</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxLLS">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>50</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="currentText">
+       <string>Triangular</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Triangular</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Uniforme</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBoxLLF">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>70</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Triangular</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Uniforme</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBoxLLA">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>90</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Triangular</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Uniforme</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBoxLRS">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>110</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Triangular</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Uniforme</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBoxRRS">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>170</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Triangular</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Uniforme</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBoxLRF">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>130</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Triangular</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Uniforme</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBoxLRA">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>150</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Triangular</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Uniforme</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBoxRRF">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>190</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Triangular</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Uniforme</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBoxRRA">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>210</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Triangular</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Uniforme</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBoxRLS">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>230</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Triangular</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Uniforme</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBoxRLF">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>250</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Triangular</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Uniforme</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBoxRLA">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>270</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Triangular</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Uniforme</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>540</y>
+     <width>80</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
